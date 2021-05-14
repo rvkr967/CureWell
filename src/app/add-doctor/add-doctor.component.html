@@ -1,0 +1,27 @@
+<div style="text-align:center">
+  <br />
+  <br />
+  <h1>Add a new Doctor</h1>
+  <br />
+  <form #addDoctorForm="ngForm" (ngSubmit)="addDoctor(doctorName.value)">
+    <div class="form-group">
+      <div class="col input-group">
+        <label><b>Doctor Name </b></label>
+        <input type="text" class="form-control" #doctorName="ngModel" name="docName" ngModel required />
+      </div>
+    </div>
+    <br />
+    <div class="form-group" style="text-align:center;margin-left:50px">
+      <button type="submit" class="btn btn-primary">Add Doctor</button>&nbsp;&nbsp;<a routerLink="/">Cancel</a>
+    </div>
+  </form>
+  <br />
+  <h1>Doctors</h1>
+  <br />
+  <select>
+    <option>Doctors List</option>
+    <option *ngFor="let doc of docList">{{doc.DoctorId}}--{{doc.DoctorName}}</option>
+  </select>
+</div>
+
+

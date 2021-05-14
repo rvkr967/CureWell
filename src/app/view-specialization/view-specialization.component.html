@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <br />
+  <br />
+  <h2>View Specializations</h2>
+  <div class="table-responsive">
+    <table style="border:5px solid rgba(220,230,242,1);margin-left:500px">
+      <thead>
+        <tr style="background-color:rgba(220,230,242,1)">
+          <th>Specialization Code</th>
+          <th>Specialization Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let spec of specializations">
+          <td>{{spec.SpecializationCode}}</td>
+          <td>{{spec.SpecializationName}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

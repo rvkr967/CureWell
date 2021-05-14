@@ -1,0 +1,25 @@
+<div style="text-align:center">
+  <br />
+  <br />
+  <br />
+  <h1>Update Doctor</h1>
+  <br />
+  <p>All fields are mandatory</p>
+  <br />
+  <table style="margin-left:500px">
+    <tr style="text-align:left">
+      <td><b>Doctor Id</b></td>
+      <td><input type="number" [value]="DoctorId" readonly/></td>
+    </tr>
+    <br />
+    <tr>
+      <td><b>Doctor Name</b></td>
+      <td><input type="text" [value]="DoctorName" id="name" (onchange)="DoctorName=name.value"/></td>
+    </tr>
+    <br />
+    <tr>
+      <td></td>
+      <td style="text-align:left"><button type="submit">Update</button>&nbsp;&nbsp;<a routerLink="/">Cancel</a></td>
+    </tr>
+  </table>
+</div>

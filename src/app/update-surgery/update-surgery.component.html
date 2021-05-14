@@ -1,0 +1,68 @@
+<br />
+<br />
+<h1 style="color:indianred">Update Surgery</h1>
+<br />
+<form #updateSurgeryForm="ngForm" (ngSubmit)="updateSurgery(stt.value,ett.value)">
+  <table>
+    <tr>
+      <td>Surgery Id</td>
+      <td>
+        <div class="col input-group">
+          <input type="number"  readonly />
+        </div>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>Doctor Id</td>
+      <td>
+        <div class="col input-group">
+          <input type="number" readonly />
+        </div>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>Surgery Date</td>
+      <td>
+        <div class="col input-group">
+          <input type="datetime" readonly />
+        </div>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>Start Time(24 Hours Format)&emsp;</td>
+      <td>
+        <div class="col input-group">
+          <input type="number" class="form-control" #stt="ngModel" name="sttime" ngModel required />
+        </div>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>End Time(24 Hours Format)</td>
+      <td>
+        <div class="col input-group">
+          <input type="number" class="form-control" #ett="ngModel" name="ettime" ngModel required />
+        </div>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>Surgery Category</td>
+      <td>
+        <div class="col input-group">
+          <input type="text" readonly />
+        </div>
+      </td>
+    </tr><br />
+    <tr>
+      <td>
+        <div class="form-group">
+          <button type="submit" class="btn">Update</button>&nbsp;&nbsp;<a routerLink="/">Cancel</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
